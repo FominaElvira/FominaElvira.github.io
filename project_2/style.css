@@ -1,0 +1,121 @@
+html {
+  weight: 100%;
+  background-color: #F5FFFA;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+
+div {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: -170px;
+  margin: 0px 50%;
+  transition: transform 1s;
+}
+
+.move{
+  transform: translateY(150%);
+}
+
+button{
+  padding: 10px 15px;
+  margin: 2% 0 0 2%;
+}
+
+.button {
+  display: inline-block;
+  width: auto;
+  /*padding: 6px 15px;*/
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #808080;
+  background-color: #2c3e50;
+  cursor: pointer;
+}
+
+.button:hover {
+  animation-name: background-color;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+  100% {
+    background-color: #315272;/*#1E90FF*/
+  }
+}
+
+.input {
+  width: 300px;
+  height: 180px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cccccc;
+  background-color: #ffffff;
+  margin: -100px 0 0 -200px; /* отступы равны половинным размера формы */
+  z-index: 9999;
+  text-align: center;
+  /*visibility: hidden;*/
+}
+
+input[type="submit"] {
+display: inline-block;
+width: auto;
+margin: 15px 5px;
+padding: 6px 15px;
+color: #ffffff;
+border: none;
+border-radius: 5px;
+box-shadow: 0 0 5px #808080;
+background-color: #2c3e50;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  animation-name: background-color;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+  100% {
+    background-color: #315272;/*#1E90FF*/
+  }
+}
+
+
+input[type="password"] {
+  margin: 10px 0;
+  border: 1px solid grey;
+}
+
+input[type="text"] {
+  margin: 10px 0;
+  border: 1px solid grey;
+}
+
+
+.search {
+  width: 300px;
+  height: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cccccc;
+  background-color: #ffffff;
+  position: relative;
+  left: 51.4%;
+  top: 50%;
+  margin: 15% 0 0 -200px;
+  z-index: 9999;
+  text-align: center;
+}
+
+input[type="search"] {
+  width: auto;
+  margin: 10% 15px;
+  height: 25px;
+}

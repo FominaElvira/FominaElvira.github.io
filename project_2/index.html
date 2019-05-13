@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+    <title>Форма поиска по сайту</title>
+  </head>
+  <body>
+    <main>
+      <button type="button" class="button">Войти</button>
+
+      <div>
+        <form class="input" action="/echo" method="post">
+          <label for="login-field" class="text">Логин</label>
+          <br>
+          <input type="text" name="login" id="login-field" required>
+          <br>
+          <label for="password" class="text">Пароль</label>
+          <br>
+          <input type="password" name="password" id="password" required>
+          <br>
+          <label>
+            <input type="checkbox" name="remember">Запомнить пароль
+          </label>
+          <br>
+            <input type="submit" name="enter" value="Войти" class="enter-1">
+        </form>
+      </div>
+
+      <form class="search" action="/echo" method="post">
+        <input type="search" name="search" placeholder="Введите запрос" value="">
+        <input type="submit" name="enter" value="Поиск" class="enter-2">
+      </form>
+    </main>
+  <script src="script.js"></script>
+  </body>
+</html>
